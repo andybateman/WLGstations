@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<!--
+        _________   _  _______
+       /   ___   \ | |/ ___   \
+      |   /   \   ||   /   \   |
+      |  |     |  ||  |     |  |
+      |   \___/   ||   \___/   |
+       \_______/|_| \_________/
+               By Andy Bateman
+
+Todo:
+
+ * Add Train Line Routes
+ * Add Stations to Map
+ * Add current speculated train locations to map
+ * Check Elevations
+ * Add Train Schedules
+ * Place Station Database in local storage
+ * Split up style and javascript in to seperate files
+
+Done:
+
+ * Add Google Map
+ * Center map on Wellington
+
+-->
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Wellington Train Movements</title>
+	<meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+
+</head>
+<body>
+
+<div id="map"></div>
+<script>
+
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById('map'), {
+    center: {lat: -41.27907882, lng: 174.7804584},
+    zoom: 11
+  });
+}
+
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?callback=initMap" async defer></script>
+
+</body>
+</html>
