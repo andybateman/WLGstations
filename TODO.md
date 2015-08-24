@@ -1,6 +1,6 @@
 ### ToDo:
 
-- [ ] Add Train Line Routes
+- [ ] Add Train Line Routes to DB
 - [ ] Add Stations to Map
 - [ ] Add current speculated train locations to map
 - [x] Add Google Map
