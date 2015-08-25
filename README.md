@@ -1,5 +1,6 @@
 # WLGstations
-Interesting mapping with the Train Stations around Wellington, NZ
+Interesting mapping with the Train Stations around Wellington, NZ.
+Any train movements indicated are based on scheduled train timetables (updated 150826) and not real time information.
 
 [Have a look at how far I've got here](http://rawgit.com/andybateman/WLGStations/master/index.html)
 
