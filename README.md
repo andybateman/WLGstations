@@ -6,3 +6,7 @@ Interesting mapping with the Train Stations around Wellington, NZ
 If you have a look at or use the stations.js for location information, the elevations are in measured in metres.
 
 [Things still to do](TODO.md)
+
+Metlink Colours
+
+[![](http://www.placehold.it/150/E8274B/ffffff)]
