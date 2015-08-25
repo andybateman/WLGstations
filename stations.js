@@ -1,5 +1,5 @@
-stations = [
-{
+stations =
+[{
 "StationID":"1",
 "Station":"Wellington Station",
 "ShortCode":"WELL",
@@ -382,5 +382,4 @@ stations = [
 "Latitude":"-40.94031498",
 "Longitude":"175.6550755",
 "Elevation":"115"
-}
-];
+}];
