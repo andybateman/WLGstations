@@ -1,11 +1,11 @@
 ### ToDo:
 
 - [ ] Add Train Line Routes to DB (partially done)
-- [ ] Add Stations to Map
+- [x] Add Stations to Map
 - [ ] Add current speculated train locations to map
 - [x] Add Google Map
 - [x] Center map on Wellington
-- [ ] Check Elevations
+- [x] Check Elevations
 - [ ] Add Train Schedules
 - [ ] Place Station Database in local storage
 - [ ] Split up style and javascript in to seperate files
