@@ -13,18 +13,19 @@
 	<meta charset="UTF-8">
 	<title>Wellington Train Movements</title>
 	<meta name="viewport" content="initial-scale=1.0">
-    <meta charset="utf-8">
+  <meta charset="utf-8">
+  <script src="./stations.js"></script>
 
-    <style>
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      #map {
-        height: 100%;
-      }
-    </style>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    #map {
+      height: 100%;
+    }
+  </style>
 
 </head>
 <body>
@@ -34,10 +35,21 @@
 
 var map;
 function initMap() {
+  
   map = new google.maps.Map(document.getElementById('map'), {
-    center: {lat: -41.27907882, lng: 174.7804584},
+    center: {lat: -41.15, lng: 174.9},
     zoom: 11
   });
+
+  for (var i = 0; i < stations.length; i++) {
+    var station = stations[i];
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng (station["Latitude"], station["Longitude"]),
+      map: map,
+      title: station["ShortCode"],
+      zIndex: i
+    });
+  }
 }
 
 </script>
