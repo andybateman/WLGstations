@@ -7,6 +7,7 @@
 - [x] Center map on Wellington
 - [x] Check Elevations
 - [ ] Add Train Schedules
+- [x] Add icons to map
 - [ ] Place Station Database in local storage
 - [ ] Split up style and javascript in to seperate files
 - [x] Split todo list in to seperate file
