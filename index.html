@@ -49,8 +49,9 @@ function initMap() {
     content: "holding..."
   });
 
-  for (var i = 0; i < stations.length; i++) {
-    var station = stations[i];
+  for (var value in stations) {
+
+    var station = stations[value];
 
     var myIcon = new google.maps.MarkerImage("Images/map-icon.png", null, null, null, new google.maps.Size(21,21));
 
@@ -58,8 +59,7 @@ function initMap() {
       position: new google.maps.LatLng (station["Latitude"], station["Longitude"]),
       map: map,
       icon: myIcon,
-      title: station["Station"],
-      zIndex: i
+      title: station["Station"]
     });
 
     google.maps.event.addListener(marker, 'click', function () {
